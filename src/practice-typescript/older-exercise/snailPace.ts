@@ -1,5 +1,4 @@
-export default function cockroachSpeed(s: number): number {
-  let cmPerSecond = s * 27.7777777778;
-  cmPerSecond = cmPerSecond;
+export default function cockroachSpeed(s: number) {
+  let cmPerSecond = Math.round(s * 27.7777777778);
   return cmPerSecond;
 }
