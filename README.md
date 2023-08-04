@@ -1,6 +1,8 @@
-# 🧰 Practicing Typescript 2023 with Cucamber example
-- using [the blog](https://khalilstemmler.com) and codeacademy TypeMart
-- TypeMart uses a simple index.ts and product.tx and I am finding  the correct product 
+# Typescript exercises - practice-typescript
+
+- simple exercises that are converted into .ts and written a simple unit test to verify it works as expected.
+- this helps learning with jest
+
 
 ### Features
 
