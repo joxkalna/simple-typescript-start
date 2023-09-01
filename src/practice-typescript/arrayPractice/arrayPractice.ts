@@ -4,18 +4,15 @@
 import { characters } from '../fixtures/starwarsCharacters';
 const starWars = characters;
 
-const fullName = starWars.map((firstName) => {
-  return firstName.name;
-});
+const fullFirstName = starWars.map((firstName) =>
+  firstName.name.substring(0, firstName.name.indexOf(' ')),
+);
 
-//console.log("firstName", fullName);
+console.log('firstName', fullFirstName);
 
 // 2. Get an array of all heights
-const starHeights = starWars.map((height) => {
-  return height.height;
-});
-
-//console.log(starHeights);
+const starHeights = starWars.map((height) => height.height);
+console.log('starWars height:', starHeights);
 
 //3.  Get an array of objects with just name and height properties
 
@@ -26,10 +23,8 @@ const nameAndHeight = starWars.map((person) => ({
 
 // console.log(nameAndHeight);
 // 4. Get an array of all first names
-const justFirstName = starWars.map((firstName) => {
-  return firstName.name.split(' ')[0];
-});
-// console.log("just first name:", justFirstName);
+const justFirstName = starWars.map((firstName) => firstName.name.split(' ')[0]);
+console.log('just first name:', justFirstName);
 
 // REDUCE - takes array of value and reduce it down to single value!
 
@@ -41,11 +36,9 @@ const items = [
   { name: 'Jo', price: 45 },
 ];
 
-const totalPrice = items.reduce((total, item) => {
-  return total + item.price;
-}, 0);
+const totalPrice = items.reduce((total, item) => total + item.price, 0);
 
-//console.log(totalPrice);
+console.log('This is a tolta price of items:', totalPrice);
 
 const people = [
   { name: 'Johnny', age: 5 },
@@ -62,4 +55,4 @@ const result = people.reduce((groupedPeople: any, person) => {
   groupedPeople[age].push(person);
   return groupedPeople;
 }, {});
-console.log(result);
+console.log('by age:', result);
