@@ -1,7 +1,7 @@
 //https://github.com/jamesqquick/javascript-array-functions-practice
 
 // 1. Get an array of all names
-import { characters } from '../../src/practice-typescript/fixtures/starwarsCharacters';
+import { characters } from '../fixtures/starwarsCharacters';
 const starWars = characters;
 
 const fullFirstName = starWars.map((firstName) =>

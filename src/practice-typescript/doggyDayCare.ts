@@ -1,11 +1,11 @@
 export default function doggyDayCare(
-  vaccinated: boolean,
-  wormed: boolean,
+  isVaccinated: boolean,
+  isWormed: boolean,
   name: string,
 ) {
-  if (vaccinated === true && wormed === true) {
+  if (isVaccinated && isWormed) {
     console.log(`${name} can be accepted`);
-  } else if (vaccinated === true || wormed === true) {
+  } else if (isVaccinated || isWormed) {
     console.log(`${name} can only be accepted by itself`);
   } else {
     console.log(`${name} cannot be accepted`);
