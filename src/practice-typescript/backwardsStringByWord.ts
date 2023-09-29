@@ -1,14 +1,7 @@
 export default function backwardStringByWord(text: string): string {
-  let reverseString = text
-    .split(/\b/)
-    .map((word) =>
-      word
-        .split(/(?=\S)/)
-        .reverse()
-        .join(''),
-    )
-    .join('');
-
-  return reverseString;
+  return text
+    .split(' ')
+    .map((word) => [...word].reverse().join(''))
+    .join(' ');
 }
-console.log(backwardStringByWord('hello world'));
+console.log(backwardStringByWord('test me all day long'));
