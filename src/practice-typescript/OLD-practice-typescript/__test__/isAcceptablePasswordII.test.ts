@@ -1,5 +1,5 @@
 import { describe, expect, test } from '@jest/globals';
-import isAcceptablePassword from '../../practice-typescript/older-exercise/isAcceptablePasswordII';
+import isAcceptablePassword from '../../../OLD-practice-typescript/older-exercise/isAcceptablePasswordII';
 describe('check if password length has a string and a number', () => {
   test('should return false if password is 5 strings and no numbers', () => {
     expect(isAcceptablePassword('short')).toBe(false);

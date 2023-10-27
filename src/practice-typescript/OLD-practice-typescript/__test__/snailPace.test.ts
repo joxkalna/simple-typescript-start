@@ -1,4 +1,4 @@
-import cockroachSpeed from '../older-exercise/snailPace';
+import cockroachSpeed from '../../../OLD-practice-typescript/older-exercise/snailPace';
 
 const chai = require('chai');
 const assert = chai.assert;

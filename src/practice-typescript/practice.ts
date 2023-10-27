@@ -8,4 +8,4 @@ function repeatSyllableSon(syllable: string, repeatNumber: number): void {
   console.log(song);
 }
 
-repeatSyllableSon('la', 4);
+repeatSyllableSon('la', 1);

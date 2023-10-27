@@ -1,5 +1,5 @@
 import { count } from 'console';
-import countDigits from '../practice-typescript/countDigits';
+import countDigits from '../practice-typescript/OLD-practice-typescript/countDigits';
 
 const chai = require('chai');
 const assert = chai.assert;

@@ -1,4 +1,4 @@
-import spinWords from '../../practice-typescript/older-exercise/reversWordIfLongerThan5';
+import spinWords from '../../../OLD-practice-typescript/older-exercise/reversWordIfLongerThan5';
 
 const chai = require('chai');
 const assert = chai.assert;
