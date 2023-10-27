@@ -1,6 +1,7 @@
 //https://github.com/jamesqquick/javascript-array-functions-practice
 
 // 1. Get an array of all names
+import { get } from 'http';
 import { characters } from '../fixtures/starwarsCharacters';
 const starWars = characters;
 
@@ -11,9 +12,8 @@ const fullFirstName = starWars.map((firstName) =>
 console.log('firstName', fullFirstName);
 
 // 2. Get an array of all heights
-const starHeights = starWars.map((height) => height.height);
-console.log('starWars height:', starHeights);
-
+const getHeights = starWars.map((heights) => heights.height);
+console.log(getHeights);
 //3.  Get an array of objects with just name and height properties
 
 const nameAndHeight = starWars.map((person) => ({
