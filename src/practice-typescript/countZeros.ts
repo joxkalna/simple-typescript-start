@@ -3,18 +3,10 @@
 // Output: An integer (number).
 
 function beginningZeros(a: string): number {
-  // your code here
-  //find zero in beginning of a string
-
   let count = 0;
-  for (let i = 0; i < a.length; i++) {
-    if (a[i] === '0') {
-      count++;
-    } else {
-      //exists straight away when a none 0 character is encountered
-      break;
-    }
+  while (a[count] == '0') {
+    count++;
   }
   return count;
 }
-console.log(beginningZeros('00nn00n'));
+console.log(beginningZeros('00nn0n'));
