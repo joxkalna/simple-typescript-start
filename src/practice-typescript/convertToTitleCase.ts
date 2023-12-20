@@ -1,10 +1,17 @@
-function toTitleCase(sentence: string): string {
-  const lowerCaps = sentence.toLowerCase();
+// converting first letter to Title
+// us a map
+// use chartAt(0) to only target first
+// we then need to join them all back
+
+export default function converToTitle(text: string): string {
+  // we need to lower all of the cases
+  const lowerCaps = text.toLowerCase();
+  // split so it puts in array word.split()
   const splitArr = lowerCaps.split(' ');
-  const toTitleCase = splitArr.map((word) => {
+  // map the word to allow targeting upper letters.put in an object and return it
+  const mapWord = splitArr.map((word) => {
     return word.charAt(0).toUpperCase() + word.slice(1);
   });
-  return toTitleCase.join(' ');
+  return mapWord.join(' ');
 }
-
-console.log(toTitleCase('HELLO wORld and TANYA loVes Jo'));
+console.log(converToTitle('tanya loves jo'));

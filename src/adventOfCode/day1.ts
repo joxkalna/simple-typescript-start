@@ -3,7 +3,7 @@ export default function calibrationDoc() {
   const contents = fs
     .readFileSync('input.txt', 'utf-8')
     .toString()
-    .split(/\r?\n/); //split into array ['6', '7', '8', '9', 'n', 's'];
+    .split(/\r?\n/); //split into array ['6789ns'];
 
   let totalSum = 0;
 

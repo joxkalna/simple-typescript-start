@@ -2,7 +2,7 @@
 
 // 1. Get an array of all names
 import { get } from 'http';
-import { characters } from '../../../fixtures/starwarsCharacters';
+import { characters } from '../../fixtures/starwarsCharacters';
 const starWars = characters;
 
 const fullFirstName = starWars.map((firstName) =>

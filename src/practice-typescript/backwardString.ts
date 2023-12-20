@@ -1,6 +1,4 @@
-function backwardString(value: string): string {
-  // your code here
-  return value.split('').reverse().join('');
+export default function backwardWordString(word: string): string {
+  return word.split('').reverse().join('');
 }
-
-console.log(backwardString('hello'));
+console.log(backwardWordString('hello'));
