@@ -12,7 +12,6 @@
 - Minimal
 - TypeScript v4
 - Testing with Jest
-- Linting with Eslint and Prettier
 - Pre-commit hooks with Husky
 - VS Code debugger scripts
 - Local development with Nodemon
@@ -36,13 +35,3 @@ Builds the app at `build`, cleaning the folder first.
 Runs the `jest` tests once.
 
 #### `npm run test:dev`
-
-Run the `jest` tests in watch mode, waiting for file changes.
-
-#### `npm run prettier-format`
-
-Format your code.
-
-#### `npm run prettier-watch`
-
-Format your code in watch mode, waiting for file changes.
