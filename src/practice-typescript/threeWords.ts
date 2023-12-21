@@ -1,3 +1,8 @@
+// Multiple solutions, using regex or word match
+// if performance is a must then string is bettr;
+
+//var threeWords = (text: string): boolean => text.split(" ").map((v: string) => isNaN(Number(v)) ? "T" : "N").join("").includes("TTT");
+
 export default function threeWords(text: string): boolean {
   return text.match(/[A-Za-z/]+ [A-Za-z/]+ [A-Za-z/]/) ? true : false;
 }
