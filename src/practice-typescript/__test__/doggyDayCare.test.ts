@@ -1,4 +1,4 @@
-import doggyDayCare from '../practice-typescript/OLD-practice-typescript/doggyDayCare';
+import doggyDayCare from '../OLD-practice-typescript/doggyDayCare';
 
 describe('doggy daycare', () => {
   it('dog can be accepted', () => {

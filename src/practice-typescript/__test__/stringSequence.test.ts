@@ -1,4 +1,4 @@
-import stringSequence from '../practice-typescript/OLD-practice-typescript/stringSequence';
+import stringSequence from '../OLD-practice-typescript/stringSequence';
 const chai = require('chai');
 const assert = chai.assert;
 chai.config.truncateThreshold = 0;

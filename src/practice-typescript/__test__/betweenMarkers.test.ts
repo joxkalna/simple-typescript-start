@@ -1,4 +1,4 @@
-import betweenMarkers from '../practice-typescript/betweenMarkers';
+import betweenMarkers from '../betweenMarkers';
 
 describe('should return string between the markers for pos1', () => {
   it('should succesfully return dog as text between markers ', () => {

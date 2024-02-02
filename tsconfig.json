@@ -34,7 +34,7 @@
     "src/practice-typescript/OLD-practice-typescript/move.ts",
     "src/practice-typescript/OLD-practice-typescript/older-exercise",
     "src/practice-typescript/OLD-practice-typescript/__test__",
-    "src/fixtures"
+    "fixtures"
   ],
   "exclude": [
     "src/**/*.spec.ts"
