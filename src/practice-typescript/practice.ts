@@ -1,10 +1,15 @@
 /* eslint-disable no-console */
-function repeatSyllableSon(syllable: string, repeatNumber: number): void {
-  let song = '';
-  for (let i = 0; i <= repeatNumber; i++) {
-    song += syllable;
+
+// repeat the word how many times I am asking for it;
+// input a song and number of times;
+function repeatThisWord(word:string, repeat:number): any {
+  let wordThatIsRepeated = ''
+
+  for(let i=0; i <= repeat; i++){
+    wordThatIsRepeated += word;
   }
-  console.log(song);
+  return wordThatIsRepeated;
 }
 
-repeatSyllableSon('la', 1);
+
+console.log(repeatThisWord('la', 3));

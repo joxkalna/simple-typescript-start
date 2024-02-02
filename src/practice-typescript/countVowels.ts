@@ -1,15 +1,18 @@
-const vowels = new Set(['a', 'e', 'i', 'o', 'u']);
 
-function countVowels(text: string): number {
-  //count const
-  let count = 0;
-  // for of loop
-  for (const char of text.toLowerCase()) {
-    if (vowels.has(char)) {
-      count++;
+const vowels = new Set(["a","e","i","o","u"])
+
+function countVowels(text:string):number {
+    let count = 0
+
+    for(const char of text.toLowerCase()){
+        if(vowels.has(char)) {
+            count++
+        }
+
     }
-  }
-  return count;
+
+    return count
 }
 
-console.log(countVowels('Hel f'));
+console.log(countVowels('Hello a'))
+
