@@ -1,18 +1,26 @@
 {
-  "root": true,
-  "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint",
-    "prettier",
-    "jest"
-  ],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "plugin:prettier/recommended" // Integrates Prettier with ESLint
   ],
+  "plugins": [
+    "@typescript-eslint",
+    "prettier" // Ensure Prettier plugin is listed
+  ],
+  "env": {
+    "browser": true, // If you're targeting browsers, make sure this is true
+    "node": true // If you're also working with Node.js, make this true
+  },
   "rules": {
-    "no-console": 1,
+    "no-console": [
+      "warn",
+      {
+        "allow": [
+          "log"
+        ]
+      }
+    ], // Allow console.log(), but warn about other console methods
     "no-undef": "error",
     "no-unused-vars": "warn",
     "prettier/prettier": [
@@ -21,10 +29,5 @@
         "endOfLine": "auto"
       }
     ]
-  },
-  "env": {
-    "browser": true,
-    "node": true,
-    "jest/globals": true
   }
 }
