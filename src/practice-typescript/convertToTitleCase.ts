@@ -7,9 +7,9 @@ export default function converToTitle(text: string): any {
   const mapWord = text
     .toLowerCase()
     .split(' ')
-    .map((word) => {
-      return word.charAt(0).toUpperCase() + word.slice(1);
-    });
-  return mapWord.join(' ');
+    .map(word => {
+      return word.charAt(0).toUpperCase() + word.slice(1)
+    })
+  return mapWord.join(' ')
 }
-console.log(converToTitle('tanya loves jo'));
+console.log(converToTitle('tanya loves jo'))

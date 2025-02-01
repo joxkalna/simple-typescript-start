@@ -1,6 +1,6 @@
 export default function solution(str: string): string {
-  let splitString = str.split("");
-  let reverseString = splitString.reverse();
-  let joinArray = reverseString.join("");
-  return joinArray;
+  const splitString = str.split('')
+  const reverseString = splitString.reverse()
+  const joinArray = reverseString.join('')
+  return joinArray
 }

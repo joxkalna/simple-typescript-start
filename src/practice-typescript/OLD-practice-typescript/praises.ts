@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-const praise: string[][] = [];
+const praise: string[][] = []
 
 const messages: string[] = [
   'love it',
@@ -8,7 +8,7 @@ const messages: string[] = [
   'magnificent',
   'superb',
   'great',
-];
+]
 
 for (let i = 0; i < 5; i++) {
   praise.push([messages[Math.floor(Math.random() * 6)]]

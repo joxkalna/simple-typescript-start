@@ -24,6 +24,6 @@ const products = [
     price: '43',
     preOrder: 'true',
   },
-];
+]
 
-export default products;
+export default products

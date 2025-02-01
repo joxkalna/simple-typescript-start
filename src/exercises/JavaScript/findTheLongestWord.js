@@ -1,12 +1,14 @@
 function findTheLongestWord(str) {
-    const splitStr = str.split(" ")
-    let findTheWord = ''
-    for (let index = 0; index < splitStr.length; index++) {
-        if (splitStr[index].length > findTheWord.length) {
-            findTheWord = splitStr[index]
-        }
+  const splitStr = str.split(' ')
+  let findTheWord = ''
+  for (let index = 0; index < splitStr.length; index++) {
+    if (splitStr[index].length > findTheWord.length) {
+      findTheWord = splitStr[index]
     }
-    return findTheWord
+  }
+  return findTheWord
 }
 
-console.log(findTheLongestWord('big bad woooooooolf visiting grandmaaaaaaaaaaaaaaaaaaa'))
+console.log(
+  findTheLongestWord('big bad woooooooolf visiting grandmaaaaaaaaaaaaaaaaaaa'),
+)

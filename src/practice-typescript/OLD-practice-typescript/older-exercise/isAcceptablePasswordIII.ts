@@ -8,7 +8,7 @@ function isAcceptablePassword(password: string): boolean {
     // negating it, it will become false
     !password.match(/^\d+$/)
     ? true
-    : false;
+    : false
 }
 
-console.log(isAcceptablePassword("muchlonger5"));
+console.log(isAcceptablePassword('muchlonger5'))

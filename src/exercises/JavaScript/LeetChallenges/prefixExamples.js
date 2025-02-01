@@ -1,30 +1,29 @@
 //Check if a word starts with a given prefix
 
 function checkPrefix(arr, prefix) {
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i].indexOf(prefix) !== 0) {
-            console.log(`${arr[i]} does not start with ${prefix}`)
-        } else {
-            console.log(`${arr[i]} starts with ${prefix}`)
-        }
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].indexOf(prefix) !== 0) {
+      console.log(`${arr[i]} does not start with ${prefix}`)
+    } else {
+      console.log(`${arr[i]} starts with ${prefix}`)
     }
+  }
 }
-console.log(checkPrefix(["apple", "bannana", "appricot", "cherry"], "ap"))
-
+console.log(checkPrefix(['apple', 'bannana', 'appricot', 'cherry'], 'ap'))
 
 const filterPrefix = (arr, prefix) => {
-       return filterArr = arr.filter(word => word.indexOf(prefix) === 0)
+  return (filterArr = arr.filter(word => word.indexOf(prefix) === 0))
 }
 
-let results = filterPrefix(["apple", "bannana", "appricot", "cherry"], "ap")
+let results = filterPrefix(['apple', 'bannana', 'appricot', 'cherry'], 'ap')
 console.log(results) // Output: apple, appricot
 
-const checkIfWordStartsWithPrefix = (arr,prefix) =>{
-    for (let i=0; i< arr.lenght;i++) {
-        arr[i].indexOf(prefix) !== 0 
-        ? console.log(`${arr[i]} does not start with ${prefix}`) 
-        : console.log(`${arr[i]} starts with ${prefix}`)
-    }
+const checkIfWordStartsWithPrefix = (arr, prefix) => {
+  for (let i = 0; i < arr.lenght; i++) {
+    arr[i].indexOf(prefix) !== 0
+      ? console.log(`${arr[i]} does not start with ${prefix}`)
+      : console.log(`${arr[i]} starts with ${prefix}`)
+  }
 }
 /*
 Explanation: 

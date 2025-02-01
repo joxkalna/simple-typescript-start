@@ -7,7 +7,7 @@
 // Return the results as an array
 
 export function countBy(x: number, n: number) {
-  const arr = [];
-  for (let i = 1; i <= n; i++) arr.push(x * i);
-  return arr;
+  const arr = []
+  for (let i = 1; i <= n; i++) arr.push(x * i)
+  return arr
 }

@@ -1,5 +1,5 @@
 function checkIfStringPalidrome(word) {
-    return word === word.split('').reverse().join('')
+  return word === word.split('').reverse().join('')
 }
 console.log(checkIfStringPalidrome('racecar')) //true
-console.log(checkIfStringPalidrome('hello'))   //false
+console.log(checkIfStringPalidrome('hello')) //false

@@ -4,10 +4,10 @@ export default function doggyDayCare(
   name: string,
 ) {
   if (isVaccinated && isWormed) {
-    console.log(`${name} can be accepted`);
+    console.log(`${name} can be accepted`)
   } else if (isVaccinated || isWormed) {
-    console.log(`${name} can only be accepted by itself`);
+    console.log(`${name} can only be accepted by itself`)
   } else {
-    console.log(`${name} cannot be accepted`);
+    console.log(`${name} cannot be accepted`)
   }
 }

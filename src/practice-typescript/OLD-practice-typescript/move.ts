@@ -4,9 +4,9 @@ function performDanceMove(
   moveReps: number,
   hasFlair: boolean,
 ): void {
-  console.log(`I do the ${moveName} ${moveReps} times !`);
+  console.log(`I do the ${moveName} ${moveReps} times !`)
   if (hasFlair) {
-    console.log('I do it with flair!');
+    console.log('I do it with flair!')
   }
 }
 
@@ -19,6 +19,6 @@ const danceMoves: [string, number, boolean][] = [
   ['wing flap', 4, true],
   ['tail feather shake', 4, true],
   ['clap', 4, true],
-];
+]
 
-danceMoves.forEach((move) => performDanceMove(...move));
+danceMoves.forEach(move => performDanceMove(...move))

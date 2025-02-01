@@ -3,12 +3,12 @@
 // Output: An integer (number).
 
 export default function beginningZeros(a: string): number {
-  let count = 0;
+  let count = 0
 
-  while(a[count] == '0'){
+  while (a[count] == '0') {
     console.log('I AM count', a[count])
-    count++;
+    count++
   }
   return count
 }
-console.log(beginningZeros('0nn0n'));
+console.log(beginningZeros('0nn0n'))

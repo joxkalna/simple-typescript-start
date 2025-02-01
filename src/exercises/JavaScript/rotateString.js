@@ -3,6 +3,4 @@
  * @param {string} goal
  * @return {boolean}
  */
-var rotateString = function (s, goal) {
-
-};
+var rotateString = function (s, goal) {}
