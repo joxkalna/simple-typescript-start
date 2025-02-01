@@ -16,14 +16,14 @@ forEach is used when you want to perform an operation on each element of an arra
 but don't need to return a new array
 */
 
-const oddsAndEvenWithLoop = (inputArray) => {
-  const odds = [];
-  const even = [];
-  inputArray.forEach((currentNumber) =>
+const oddsAndEvenWithLoop = inputArray => {
+  const odds = []
+  const even = []
+  inputArray.forEach(currentNumber =>
     currentNumber % 2 === 0
       ? even.push(currentNumber)
       : odds.push(currentNumber),
-  );
-  return { odds, even };
-};
-console.log(oddsAndEvenWithLoop([1, 2, 3, 4, 5, 6, 7]));
+  )
+  return { odds, even }
+}
+console.log(oddsAndEvenWithLoop([1, 2, 3, 4, 5, 6, 7]))

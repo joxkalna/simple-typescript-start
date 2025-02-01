@@ -9,11 +9,11 @@ The function is designed to check if this element exists within the joined strin
 */
 
 const substringOfArray = (array1, array2) => {
-  let arr = array2.join(''); //join all items to arr
-  return array1.filter((item) => arr.search(item) !== -1).sort();
-};
+  let arr = array2.join('') //join all items to arr
+  return array1.filter(item => arr.search(item) !== -1).sort()
+}
 
-const arr1 = ['xyz', 'live', 'strong'];
-const arr2 = ['lively', 'alive', 'harp', 'sharp', 'armstrong'];
+const arr1 = ['xyz', 'live', 'strong']
+const arr2 = ['lively', 'alive', 'harp', 'sharp', 'armstrong']
 
-console.log(substringOfArray(arr1, arr2));
+console.log(substringOfArray(arr1, arr2))

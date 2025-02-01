@@ -1,12 +1,16 @@
 //Write a function to chop a string into chunks of a given length and return it as array
 
-function stringChunk(str, size = str.length) {
-    const arr = []
-    let i = 0
-    while (i < str.length) {
-        arr.push(str.slice(i, i + size))
-        i = i + size
-    }
-    return arr
+function chopStringsIntoChunks(str, size) {
+  const arr = []
+  let i = 0
+  let splitString = str.split(' ').join('')
+
+  while (i < splitString.length) {
+    //
+    arr.push(splitString.slice(i, i + size)) //
+    i += size
+  }
+  return arr
 }
-console.log(stringChunk('I am Javascript', 4))
+
+console.log(chopStringsIntoChunks('I am Java', 3))
