@@ -2,7 +2,7 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended" // Integrates Prettier with ESLint
+    "plugin:prettier/recommended" // This overrides ESLint rules for formating issues
   ],
   "plugins": [
     "@typescript-eslint",
@@ -20,13 +20,25 @@
           "log"
         ]
       }
-    ], // Allow console.log(), but warn about other console methods
+    ],
     "no-undef": "error",
     "no-unused-vars": "warn",
+    "semi": [
+      "error",
+      "never"
+    ],
     "prettier/prettier": [
       "error",
       {
-        "endOfLine": "auto"
+        "trailingComma": "all",
+        "singleQuote": true,
+        "printWidth": 80,
+        "endOfLine": "auto",
+        "semi": false,
+        "arrowParens": "avoid"
+      },
+      {
+        "usePrettierrc": false
       }
     ]
   }
