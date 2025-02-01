@@ -1,4 +1,4 @@
-import fizzBuzz from '../fizzBuzz'
+import fizzBuzz from '../../Katas_Leet_Code/fizzBuzz'
 
 describe('should return string between the markers for pos1', () => {
   it('should succesfully return dog as text between markers ', () => {
