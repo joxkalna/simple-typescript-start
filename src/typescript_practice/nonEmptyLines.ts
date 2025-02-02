@@ -1,4 +1,3 @@
-import { match } from 'assert'
 // !== checks wheather the values on both sides are not equal
 // regex - /\r?\n|\r/
 function nonEmptyLines(text: string): number {

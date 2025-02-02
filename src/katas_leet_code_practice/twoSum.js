@@ -5,7 +5,7 @@
  */
 var twoSum = function (nums, target) {
   let arrLength = nums.length
-  result = []
+  let result = []
 
   for (let i = 0; i < arrLength; i++) {
     for (let j = i + 1; j < arrLength; j++) {

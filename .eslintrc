@@ -2,31 +2,29 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended" // This overrides ESLint rules for formating issues
+    "plugin:prettier/recommended", // This overrides ESLint rules for formating issues
+    "plugin:jest/recommended"
   ],
   "plugins": [
     "@typescript-eslint",
-    "prettier" // Ensure Prettier plugin is listed
+    "prettier", // Ensure Prettier plugin is listed
+    "jest"
   ],
   "env": {
     "browser": true, // If you're targeting browsers, make sure this is true
-    "node": true // If you're also working with Node.js, make this true
+    "node": true, // If you're also working with Node.js, make this true
+    "jest": true
   },
   "rules": {
     "no-console": [
       "warn",
       {
-        "allow": [
-          "log"
-        ]
+        "allow": ["log"]
       }
     ],
     "no-undef": "error",
     "no-unused-vars": "warn",
-    "semi": [
-      "error",
-      "never"
-    ],
+    "semi": ["error", "never"],
     "prettier/prettier": [
       "error",
       {

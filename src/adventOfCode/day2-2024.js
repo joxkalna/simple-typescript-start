@@ -1,11 +1,10 @@
-const fs = require('fs')
+import { readFileSync } from 'fs'
 
 // The levels are either all increasing or all decreasing.
 // Any two adjacent levels differ by at least one and at most three.
 function isItSafe() {
   // Read the input from the file
-  const contents = fs
-    .readFileSync('day2-input.txt', 'utf-8')
+  const contents = readFileSync('day2-input.txt', 'utf-8')
     .toString()
     .split(/\r?\n/) // Split into array of lines
     .filter(line => line.trim() !== '') // Remove empty lines
@@ -14,7 +13,7 @@ function isItSafe() {
   let totalSafeCount = 0 // Variable to count the number of safe lines
 
   // Iterate over each line in contents
-  contents.forEach((line, index) => {
+  contents.forEach(line => {
     let isSafe = true // Assume the line is safe, unless proven otherwise
     let isIncreasing = true // Assume the line is increasing, unless proven otherwise
     let isDecreasing = true // Assume the line is decreasing, unless proven otherwise

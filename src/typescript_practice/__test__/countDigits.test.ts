@@ -1,6 +1,6 @@
 import countDigits from '../OLD-practice-typescript/countDigits'
 
-const chai = require('chai')
+import chai from 'chai'
 const assert = chai.assert
 chai.config.truncateThreshold = 0
 

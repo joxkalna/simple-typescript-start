@@ -1,4 +1,4 @@
-export default function backwardString(text: string): any {
+export default function backwardString(text: string): string {
   return text
     .split(' ')
     .map(word => [...word].reverse().join(' '))

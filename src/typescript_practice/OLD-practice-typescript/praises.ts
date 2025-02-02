@@ -11,7 +11,6 @@ const messages: string[] = [
 ]
 
 for (let i = 0; i < 5; i++) {
-  praise.push([messages[Math.floor(Math.random() * 6)]]
-  )
-};
+  praise.push([messages[Math.floor(Math.random() * 6)]])
+}
 console.log(praise)

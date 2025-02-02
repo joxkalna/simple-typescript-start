@@ -12,7 +12,7 @@ function checkPrefix(arr, prefix) {
 console.log(checkPrefix(['apple', 'bannana', 'appricot', 'cherry'], 'ap'))
 
 const filterPrefix = (arr, prefix) => {
-  return (filterArr = arr.filter(word => word.indexOf(prefix) === 0))
+  return arr.filter(word => word.indexOf(prefix) === 0)
 }
 
 let results = filterPrefix(['apple', 'bannana', 'appricot', 'cherry'], 'ap')
@@ -25,6 +25,7 @@ const checkIfWordStartsWithPrefix = (arr, prefix) => {
       : console.log(`${arr[i]} starts with ${prefix}`)
   }
 }
+console.log(checkIfWordStartsWithPrefix)
 /*
 Explanation: 
 

@@ -1,8 +1,5 @@
 {
   "extends": "./tsconfig.json",
   // 👇️ type-checks the tests using tsconfig.build.json
-  "exclude": [
-    "practice-typescript/*.ts",
-    "practice-typescript/**/*.test.ts"
-  ]
+  "exclude": ["practice-typescript/*.ts", "practice-typescript/**/*.test.ts"]
 }
