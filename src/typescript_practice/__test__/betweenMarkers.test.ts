@@ -1,7 +1,7 @@
 import betweenMarkers from '../betweenMarkers'
 
 describe('should return string between the markers for pos1', () => {
-  it('should succesfully return dog as text between markers ', () => {
+  it('should succesfully return dog as text between markers', () => {
     const text = 'What a <dog>'
     const start = '<'
     const end = '>'
@@ -15,7 +15,7 @@ describe('should return string between the markers for pos1', () => {
     const result = betweenMarkers(text, start, end)
     expect(result).toEqual('What a dog')
   })
-  it('should return empty string if If the final marker comes before the initial marker ', () => {
+  it('should return empty string if If the final marker comes before the initial marker', () => {
     const text = 'What a >dog>'
     const start = '>'
     const end = '>' //marker is opposite, returns empty string

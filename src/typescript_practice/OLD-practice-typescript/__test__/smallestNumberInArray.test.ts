@@ -1,6 +1,6 @@
 import smallestNumInArray from '../../../OLD-practice-typescript/older-exercise/smallestNumberInArray'
 
-const chai = require('chai')
+import chai from 'chai'
 const assert = chai.assert
 chai.config.truncateThreshold = 0
 

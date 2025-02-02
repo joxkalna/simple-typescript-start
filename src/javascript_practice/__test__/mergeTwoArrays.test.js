@@ -20,7 +20,7 @@ describe('Merge Two Arrays Kata', () => {
   it('should return an array with mix of string and boolean', () => {
     expect(mergeArrays(arr2, arr5)).toEqual(['a', 'b', true, false])
   })
-  it('should return an array with mix of string and boolean', () => {
+  it('should return an array with mix of string and boolean2', () => {
     expect(mergeArrays(arr2, arr5)).toEqual(['a', 'b', true, false])
   })
   it('should not duplicate array if values are the same', () => {

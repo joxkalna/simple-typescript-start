@@ -1,6 +1,6 @@
 import spinWords from '../../../OLD-practice-typescript/older-exercise/reversWordIfLongerThan5'
 
-const chai = require('chai')
+import chai from 'chai'
 const assert = chai.assert
 
 describe('Spinning words', () => {

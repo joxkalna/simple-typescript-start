@@ -11,7 +11,7 @@ describe('doggy daycare', () => {
     doggyDayCare(true, false, 'Dug')
     expect(logSpy).toHaveBeenCalledWith('Dug can only be accepted by itself')
   })
-  it('dog can be only accepted by itself', () => {
+  it('dog can be only accepted by itself breed', () => {
     const logSpy = jest.spyOn(global.console, 'log')
     doggyDayCare(false, true, 'Bred')
     expect(logSpy).toHaveBeenCalledWith('Bred can only be accepted by itself')

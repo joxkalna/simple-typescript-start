@@ -1,9 +1,8 @@
-const fs = require('fs')
+import { readFileSync } from 'fs'
 
 function twoLists() {
   // Read the input from the file
-  const contents = fs
-    .readFileSync('day1-input.txt', 'utf-8')
+  const contents = readFileSync('day1-input.txt', 'utf-8')
     .split(/\r?\n/) // Split the file content into lines
     .filter(line => line.trim() !== '') // Remove any empty lines
     .map(line => line.split(/\s+/)) // Split each line into two parts based on space or tab

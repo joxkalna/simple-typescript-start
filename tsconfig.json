@@ -2,41 +2,17 @@
   "compilerOptions": {
     "target": "ES6",
     "module": "commonjs",
-    "lib": [
-      "es6",
-      "dom",
-      "ES2017",
-      "ES2021"
-    ],
+    "lib": ["es6", "dom", "ES2017", "ES2021"],
     "allowJs": true,
     "outDir": "build",
     "rootDir": "src",
     "strict": true,
     "esModuleInterop": true,
-    "types": [
-      "node",
-      "jest"
-    ],
+    "types": ["node", "jest", "chai"],
     "noEmit": true,
     "skipLibCheck": true,
-    "sourceMap": false,
+    "sourceMap": false
   },
-  "include": [
-    "src/**/*",
-    "src/practice-typescript/OLD-practice-typescript/countDigits.ts",
-    "src/practice-typescript/OLD-practice-typescript/allElementsEqualArray.ts",
-    "src/practice-typescript/OLD-practice-typescript/index.ts",
-    "src/practice-typescript/OLD-practice-typescript/policy.ts",
-    "src/practice-typescript/OLD-practice-typescript/praises.ts",
-    "src/practice-typescript/OLD-practice-typescript/todyaysMenu.ts",
-    "src/practice-typescript/OLD-practice-typescript/stringSequence.ts",
-    "src/practice-typescript/OLD-practice-typescript/doggyDayCare.ts",
-    "src/practice-typescript/OLD-practice-typescript/move.ts",
-    "src/practice-typescript/OLD-practice-typescript/older-exercise",
-    "src/practice-typescript/OLD-practice-typescript/__test__",
-    "fixtures"
-  ],
-  "exclude": [
-    "src/**/*.spec.ts"
-  ]
+  "include": ["src/**/*", "src/katas_leet_code_practice/fixtures"],
+  "exclude": ["src/**/*.spec.ts", "node_modules"]
 }

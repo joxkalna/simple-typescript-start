@@ -6,7 +6,6 @@ export default function beginningZeros(a: string): number {
   let count = 0
 
   while (a[count] == '0') {
-    console.log('I AM count', a[count])
     count++
   }
   return count
