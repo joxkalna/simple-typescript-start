@@ -1,4 +1,5 @@
 //https://github.com/jamesqquick/javascript-array-functions-practice
+
 import { characters } from './fixtures/starwarsCharacters'
 const starWars = characters
 
