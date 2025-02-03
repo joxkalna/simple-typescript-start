@@ -1,19 +1,4 @@
 //https://github.com/jamesqquick/javascript-array-functions-practice
-import { characters } from './fixtures/starwarsCharacters'
-const starWars = characters
-
-const fullFirstName = starWars.map(firstName =>
-  firstName.name.substring(0, firstName.name.indexOf(' ')),
-)
-
-const getHeights = starWars.map(heights => heights.height)
-
-const nameAndHeight = starWars.map(person => ({
-  name: person.name,
-  height: person.height,
-}))
-
-const justFirstName = starWars.map(firstName => firstName.name.split(' ')[0])
 
 const items = [
   { name: 'Johnny', price: 5 },
@@ -39,10 +24,6 @@ const groupedPeopleResult = people.reduce((groupedPeople: any, person) => {
   return groupedPeople
 }, {})
 
-console.log('fullFirstNam', fullFirstName)
-console.log('just first name:', justFirstName)
-console.log('get all people heights', getHeights)
-console.log('get people heights and name', nameAndHeight)
 console.log(
   'grouped people by age from lowest to heighest:',
   groupedPeopleResult,
