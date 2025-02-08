@@ -15,7 +15,7 @@ The project is organized into the following main directories:
 
 ### FizzBuzz (TypeScript)
 
-``` typescript
+```typescript
 export default function fizzBuzz(start: number, end: number): number {
   // Implementation details...
 }
@@ -31,8 +31,9 @@ This project uses several tools to maintain code quality and consistency:
 
 These tools work together to enforce coding standards and catch potential issues before they're committed.
 
-#  Getting Started
+# Getting Started
+
 - Clone the repository
 - Install dependencies: npm install
-- ``` npx ts-node name_of_the_file.ts ``` 
-
+- `npx ts-node name_of_the_file.ts`: typescript
+- node name_of_the_file.js : javascript

@@ -12,10 +12,10 @@ const getNameAndHeight = starWars.map(person => ({
   name: person.name,
   height: person.height,
 }))
-// 4.Get an array of all first names
-const getArrayOfNames = starWars.map(firstName => firstName.name.split(' '))
-
+const getArrayOfFirstNameOnly = starWars.map(
+  firstName => firstName.name.split(' ')[0],
+)
 console.log('getAllNames', getAllNames)
 console.log('getAllHeights', getAllHeights)
 console.log('getNameandHeight', getNameAndHeight)
-console.log('getArrayOfNames:', getArrayOfNames)
+console.log('get first name only of the full name:', getArrayOfFirstNameOnly)
