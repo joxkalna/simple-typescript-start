@@ -34,4 +34,11 @@ export const characters = [
     eye_color: 'blue',
     gender: 'female',
   },
+  {
+    name: 'Dannt Skywalker',
+    height: 222,
+    mass: 222,
+    eye_color: 'blue',
+    gender: 'female',
+  },
 ]

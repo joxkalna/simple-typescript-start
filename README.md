@@ -37,3 +37,16 @@ These tools work together to enforce coding standards and catch potential issues
 - Install dependencies: npm install
 - `npx ts-node name_of_the_file.ts`: typescript
 - node name_of_the_file.js : javascript
+
+# To practice on existing file:
+
+- in script folder I have created a small script that will clean the file you want and just leave comments and imports. This has greatly helped me learn!
+
+## How does it work?
+
+`cd simple-typescript-start/scripts`
+
+- Make the script executable:
+  `chmod +x clean_code.sh`
+- Run it by providing the file you want to process:
+  `./clean_code.sh path/to/your/file.js`
