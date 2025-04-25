@@ -1,13 +1,30 @@
-export default function fizzBuzz(start: number, end: number): number {
-  let num = start
+// 15: FIZZ BUZZ; 3: FIZZ; 5: BUZZ
 
+const fizzBuzzBetweenTwoNumbers = (start: number, end: number) => {
+  let num = start
   for (num; num <= end; num++) {
-    // want to display FIZZ  BUZZ in console log.
-    if (num % 15 === 0) console.log('FIZZ BUZZ')
-    if (num % 3 === 0) console.log('FIZZ')
-    if (num % 5 === 0) console.log('BUZZ')
-    else console.log(num)
+    if (num % 15 === 0) {
+      console.log('FIZZ BUZZ')
+    } else if (num % 3 === 0) {
+      console.log('FIZZ')
+    } else if (num % 5 === 0) {
+      console.log('BUZZ')
+    } else console.log(num)
   }
-  return num //returns last number in the foor loop as otherwise returns undefined;
+  return num
 }
-console.log(fizzBuzz(1, 6))
+console.log('Fizzin between two numbers', fizzBuzzBetweenTwoNumbers(1, 15))
+
+const fizzBuzz = (num: number): number => {
+  for (let i = 0; i <= num; i++) {
+    if (i % 15 === 0) {
+      console.log('FIZZ BUZZ')
+    } else if (i % 3 === 0) {
+      console.log('FIZZ')
+    } else if (i % 5 === 0) {
+      console.log(i)
+    } else console.log(i)
+  }
+  return num
+}
+console.log('am I fizzin', fizzBuzz(15))

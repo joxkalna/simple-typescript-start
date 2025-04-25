@@ -31,12 +31,21 @@ This project uses several tools to maintain code quality and consistency:
 
 These tools work together to enforce coding standards and catch potential issues before they're committed.
 
-# Getting Started
+## Prerequisites
 
-- Clone the repository
-- Install dependencies: npm install
-- `npx ts-node name_of_the_file.ts`: typescript
-- node name_of_the_file.js : javascript
+- [Node.js](https://nodejs.org/) (v14 or newer recommended)
+
+## Setup
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+
+## Running the Application
+
+- To run the main application: `npm start`
+- To run specific files:
+  - TypeScript files: `npx ts-node src/filename.ts`
+  - JavaScript files: `node src/filename.js`
 
 # To practice on existing file:
 
