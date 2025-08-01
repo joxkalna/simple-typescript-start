@@ -13,22 +13,17 @@ temp_file=$(mktemp)
 
 # Process the file
 awk '
-BEGIN { in_console_log = 0 }
+# Keep comments
 /^[[:space:]]*\/\/|^[[:space:]]*#/ { print; next }
-/^[[:space:]]*console\.log/ { in_console_log = 1; print; next }
-/^[[:space:]]*import/ { print; next }
-in_console_log == 1 { 
-    if ($0 ~ /\)$/) {
-        print
-        in_console_log = 0
-    } else {
-        print
-    }
-    next
-}
+
+# Keep only console.log statements
+/^[[:space:]]*console\.log/ { print; next }
+
+# Skip everything else
+{ next }
 ' "$file" >"$temp_file"
 
 # Replace the original file with the processed content
 mv "$temp_file" "$file"
 
-echo "File has been processed. Comments, multi-line console.log statements, and import statements have been preserved."
+echo "File has been processed. Only comments and console.log statements have been preserved."
