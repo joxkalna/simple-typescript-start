@@ -33,3 +33,5 @@ console.log(
 console.log('This is a tolta price of items:', totalPrice)
 
 console.log('I am total of array', totalArr)
+
+export {}
